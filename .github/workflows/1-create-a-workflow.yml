@@ -1,4 +1,11 @@
-name: Step 1, Create a workflow
+name: Post welcome comment
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  pull-requests: write
+  
+  name: Step 1, Create a workflow
 
 # This step triggers after every push to welcome-workflow.
 # This workflow updates from step 1 to step 2.
